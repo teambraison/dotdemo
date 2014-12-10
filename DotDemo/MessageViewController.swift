@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class MessageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DotHTTPRequestDelegate
+class MessageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DotHTTPRequestDelegate, SocketIOSocketDelegate, SocketIOClientDelegate
 {
     @IBOutlet weak var contactNameLabel: UILabel!
     @IBOutlet weak var sendMessageLabel: UILabel!
@@ -26,6 +26,9 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
     let account = Account.sharedInstance
     
     var socketIsConnected: Bool
+    
+    var socketio:SocketIOClient!
+    var socket: SocketIOSocket!
     
     
     override init() {
@@ -49,6 +52,18 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
         dotMessage.delegate = self
         dotReceiveMessage.delegate = self
         getMessages()
+        let url = Data.URL() + "/socket.io/"
+        socketio = SocketIOClient(uri: url, query: ["":""], transports: ["polling", "websocket"], autoConnect: true, reconnect: true, reconnectAttempts: 0, reconnectDelay: 5, reconnectDelayMax: 30, timeout: 30)
+        socketio.delegate = self
+        socketio.open()
+
+        socket = socketio.socket("")
+        socket.delegate = self
+        socket.event("join", data: ["user_name": account.username, "user_id": account.user_id], ack: {(packet)-> Void in println("Successfully joined")})
+
+        socket.onOpen()
+        socket.onConnected()
+
         
         
         self.messageTableView.registerNib(UINib(nibName: Data.dotDialogBoxNibName(), bundle: nil), forCellReuseIdentifier: Data.dotDialogBoxNibID())
@@ -67,12 +82,96 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
         
         keyHolder = KeyboardPlaceHolder.sharedInstance
         
-        let url = Data.URL() + "/socket.io/"
         
         println("Url: \(url)")
     }
     
+    func socketOnEvent(socket: SocketIOSocket, event: String, data: AnyObject?) {
+        if(event == "new_msg") {
+            let testData: NSData = data as NSData
+            println("Data: \(testData)")
+        }
+        println("recieving an event")
+    }
+    
+    func socketOnOpen(socket: SocketIOSocket) {
+        println("socket is opened")
+    }
+    
+    func socketOnError(socket: SocketIOSocket, error: String, description: String?) {
+        
+    }
+    
+    func socketOnPacket(socket: SocketIOSocket, packet: SocketIOPacket) {
+        println("receiving a package")
+    }
+    
+    func clientOnClose(client: SocketIOClient) {
+        
+    }
+    
+    func clientOnConnectionTimeout(client: SocketIOClient) {
+        
+    }
+    
+    func clientOnOpen(client: SocketIOClient) {
+        
+    }
+    
+    
+    
+    func clientOnPacket(client: SocketIOClient, packet: SocketIOPacket) {
+        if(packet.data != nil) {
+            let myData: NSArray = packet.data as NSArray
+            if((myData[0] as NSString) == "new_msg") {
+                let dic:Dictionary<String, String> = myData[1] as Dictionary<String, String>
+                let message = dic["message"]!
+                let username = dic["username"]!
+                println("Receiving message from \(username): \(message)")
+                addMessageConversation(username, content: message)
 
+            }
+        }
+    }
+    
+    func addMessageConversation(sender: String, content: String) {
+        let message = Message()
+        message.messageContent = content
+        if(sender == account.user_id) {
+            message.senderName = account.username
+        } else {
+            message.senderName = contact.username
+        }
+        messages.append(message)
+        dispatch_async(dispatch_get_main_queue(), {
+            self.messageTableView.reloadData()
+            if(self.messages.count > 0) {
+                var path = NSIndexPath(forRow: self.messages.count - 1, inSection: 0)
+                self.messageTableView.scrollToRowAtIndexPath(path, atScrollPosition: UITableViewScrollPosition.Bottom, animated: true)
+            }
+        })
+
+    }
+    
+    
+    func clientReconnected(client: SocketIOClient) {
+        
+    }
+    
+    func clientReconnectionError(client: SocketIOClient, error: String, description: String?) {
+        
+    }
+    
+    func clientReconnectionFailed(client: SocketIOClient) {
+        
+    }
+    
+    func clientOnError(client: SocketIOClient, error: String, description: String?) {
+        
+    }
+    
+    
+    
     
     func returnToPreviousScreen() {
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -119,12 +218,6 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
                 println("NOt connected to server")
             }
         }
-//        if(sendMessageLabel.text != nil) {
-//            let myMessage = Message()
-//            myMessage.senderName = "김주윤"
-//            myMessage.messageContent = sendMessageLabel.text
-//            messages.append(myMessage)
-//        }
         dispatch_async(dispatch_get_main_queue(), {
             self.messageTableView.reloadData()
             if(self.messages.count > 0) {

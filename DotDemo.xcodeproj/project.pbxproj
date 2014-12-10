@@ -40,6 +40,17 @@
 		5DAA71391A37266100A1AFFA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA71381A37266100A1AFFA /* Message.swift */; };
 		5DAA713B1A37267400A1AFFA /* DotDialogBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA713A1A37267400A1AFFA /* DotDialogBox.swift */; };
 		5DAA713D1A37267D00A1AFFA /* DotDialogBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DAA713C1A37267D00A1AFFA /* DotDialogBox.xib */; };
+		5DE955EA1A37586200D5305F /* EngineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955E31A37586200D5305F /* EngineParser.swift */; };
+		5DE955EB1A37586200D5305F /* EngineSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955E41A37586200D5305F /* EngineSocket.swift */; };
+		5DE955EC1A37586200D5305F /* EngineTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955E51A37586200D5305F /* EngineTransport.swift */; };
+		5DE955ED1A37586200D5305F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE955E61A37586200D5305F /* Info.plist */; };
+		5DE955EE1A37586200D5305F /* SocketIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955E71A37586200D5305F /* SocketIO.swift */; };
+		5DE955EF1A37586200D5305F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955E91A37586200D5305F /* Utils.swift */; };
+		5DE955F61A3759C300D5305F /* AF-NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955F11A3759C300D5305F /* AF-NSDate-Extension.swift */; };
+		5DE955F71A3759C300D5305F /* alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955F21A3759C300D5305F /* alamofire.swift */; };
+		5DE955F81A3759C300D5305F /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955F31A3759C300D5305F /* Dollar.swift */; };
+		5DE955F91A3759C300D5305F /* starscream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955F41A3759C300D5305F /* starscream.swift */; };
+		5DE955FA1A3759C300D5305F /* SwifterSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955F51A3759C300D5305F /* SwifterSnippet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +102,18 @@
 		5DAA71381A37266100A1AFFA /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5DAA713A1A37267400A1AFFA /* DotDialogBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotDialogBox.swift; sourceTree = "<group>"; };
 		5DAA713C1A37267D00A1AFFA /* DotDialogBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DotDialogBox.xib; sourceTree = "<group>"; };
+		5DE955E31A37586200D5305F /* EngineParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineParser.swift; sourceTree = "<group>"; };
+		5DE955E41A37586200D5305F /* EngineSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineSocket.swift; sourceTree = "<group>"; };
+		5DE955E51A37586200D5305F /* EngineTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineTransport.swift; sourceTree = "<group>"; };
+		5DE955E61A37586200D5305F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DE955E71A37586200D5305F /* SocketIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIO.swift; sourceTree = "<group>"; };
+		5DE955E81A37586200D5305F /* SocketIOCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOCocoa.h; sourceTree = "<group>"; };
+		5DE955E91A37586200D5305F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5DE955F11A3759C300D5305F /* AF-NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AF-NSDate-Extension.swift"; sourceTree = "<group>"; };
+		5DE955F21A3759C300D5305F /* alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alamofire.swift; sourceTree = "<group>"; };
+		5DE955F31A3759C300D5305F /* Dollar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
+		5DE955F41A3759C300D5305F /* starscream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = starscream.swift; sourceTree = "<group>"; };
+		5DE955F51A3759C300D5305F /* SwifterSnippet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwifterSnippet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +195,7 @@
 		5DAA70F31A36FEEA00A1AFFA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5DE955E11A37583C00D5305F /* SocketIO */,
 				5DAA71371A37265500A1AFFA /* Message */,
 				5DAA711F1A37055800A1AFFA /* Contact */,
 				5DAA71161A37031100A1AFFA /* Account */,
@@ -323,6 +347,41 @@
 			name = Message;
 			sourceTree = "<group>";
 		};
+		5DE955E11A37583C00D5305F /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				5DE955F01A3759C300D5305F /* vendor */,
+				5DE955E21A37586200D5305F /* SocketIOCocoa */,
+			);
+			name = SocketIO;
+			sourceTree = "<group>";
+		};
+		5DE955E21A37586200D5305F /* SocketIOCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				5DE955E31A37586200D5305F /* EngineParser.swift */,
+				5DE955E41A37586200D5305F /* EngineSocket.swift */,
+				5DE955E51A37586200D5305F /* EngineTransport.swift */,
+				5DE955E61A37586200D5305F /* Info.plist */,
+				5DE955E71A37586200D5305F /* SocketIO.swift */,
+				5DE955E81A37586200D5305F /* SocketIOCocoa.h */,
+				5DE955E91A37586200D5305F /* Utils.swift */,
+			);
+			path = SocketIOCocoa;
+			sourceTree = "<group>";
+		};
+		5DE955F01A3759C300D5305F /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5DE955F11A3759C300D5305F /* AF-NSDate-Extension.swift */,
+				5DE955F21A3759C300D5305F /* alamofire.swift */,
+				5DE955F31A3759C300D5305F /* Dollar.swift */,
+				5DE955F41A3759C300D5305F /* starscream.swift */,
+				5DE955F51A3759C300D5305F /* SwifterSnippet.swift */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,6 +462,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE955ED1A37586200D5305F /* Info.plist in Resources */,
 				5DAA712A1A3705C900A1AFFA /* LoginItem.xib in Resources */,
 				5DAA70D81A36FE6200A1AFFA /* Main.storyboard in Resources */,
 				5DAA710A1A37013A00A1AFFA /* MenuItem.xib in Resources */,
@@ -429,15 +489,22 @@
 			files = (
 				5DAA71271A3705BE00A1AFFA /* LoginViewController.swift in Sources */,
 				5DAA71131A3702F400A1AFFA /* HTTPTask.swift in Sources */,
+				5DE955F91A3759C300D5305F /* starscream.swift in Sources */,
 				5DAA71011A3700E100A1AFFA /* MainMenuViewController.swift in Sources */,
+				5DE955EC1A37586200D5305F /* EngineTransport.swift in Sources */,
+				5DE955F81A3759C300D5305F /* Dollar.swift in Sources */,
 				5DAA71211A37056400A1AFFA /* Contact.swift in Sources */,
+				5DE955EF1A37586200D5305F /* Utils.swift in Sources */,
 				5DAA70F81A36FEFF00A1AFFA /* DotAPI.swift in Sources */,
 				5DAA71141A3702F400A1AFFA /* HTTPUpload.swift in Sources */,
+				5DE955EA1A37586200D5305F /* EngineParser.swift in Sources */,
 				5DAA70D51A36FE6200A1AFFA /* ViewController.swift in Sources */,
 				5DAA70F71A36FEFF00A1AFFA /* Data.swift in Sources */,
+				5DE955EB1A37586200D5305F /* EngineSocket.swift in Sources */,
 				5DAA71281A3705BE00A1AFFA /* LoginItem.swift in Sources */,
 				5DAA71051A37011200A1AFFA /* DotTableView.swift in Sources */,
 				5DAA711E1A37053D00A1AFFA /* ContactItem.swift in Sources */,
+				5DE955EE1A37586200D5305F /* SocketIO.swift in Sources */,
 				5DAA71301A3706B300A1AFFA /* DotTimeViewController.swift in Sources */,
 				5DAA712D1A37060800A1AFFA /* KeyboardViewController.swift in Sources */,
 				5DAA70D31A36FE6200A1AFFA /* AppDelegate.swift in Sources */,
@@ -448,8 +515,11 @@
 				5DAA71321A3717CF00A1AFFA /* TestMainMenuViewController.swift in Sources */,
 				5DAA71111A3702F400A1AFFA /* HTTPRequestSerializer.swift in Sources */,
 				5DAA71061A37011200A1AFFA /* DotItem.swift in Sources */,
+				5DE955F71A3759C300D5305F /* alamofire.swift in Sources */,
+				5DE955F61A3759C300D5305F /* AF-NSDate-Extension.swift in Sources */,
 				5DAA70F91A36FEFF00A1AFFA /* KeyboardPlaceHolder.swift in Sources */,
 				5DAA71391A37266100A1AFFA /* Message.swift in Sources */,
+				5DE955FA1A3759C300D5305F /* SwifterSnippet.swift in Sources */,
 				5DAA71181A37032A00A1AFFA /* Account.swift in Sources */,
 				5DAA711C1A37052D00A1AFFA /* ContactsViewController.swift in Sources */,
 			);

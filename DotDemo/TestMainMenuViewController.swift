@@ -74,8 +74,9 @@ class TestMainMenuViewController:UIViewController
             let contactsVC:ContactsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("contacts") as ContactsViewController
             self.navigationController?.pushViewController(contactsVC, animated: true)
             
-        } else if(nextView == "") {
-            
+        } else if(nextView == "설정") {
+            let settingVC:SettingViewController = self.storyboard?.instantiateViewControllerWithIdentifier("setting") as SettingViewController
+            self.navigationController?.pushViewController(settingVC, animated: true)
         } else if(nextView == "") {
             
         } else {

@@ -175,7 +175,159 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w80-hG-uGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689" y="566"/>
+            <point key="canvasLocation" x="1779" y="566"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="3E6-gR-TqC">
+            <objects>
+                <viewController storyboardIdentifier="setting" id="AAr-6v-h3H" customClass="SettingViewController" customModule="DotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YtT-yD-fhQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="2e4-kn-AnW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qoX-eb-8gb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="XI9-JC-a89">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="settingTableView" destination="XI9-JC-a89" id="xCm-ze-Vy9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNv-3x-ovc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1598" y="1286"/>
+        </scene>
+        <!--Bluetooth Device View Controller-->
+        <scene sceneID="vHj-dm-EC6">
+            <objects>
+                <viewController storyboardIdentifier="bluetoothdevice" id="8OY-UY-KJU" customClass="BluetoothDeviceViewController" customModule="DotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="82e-Oy-o2y"/>
+                        <viewControllerLayoutGuide type="bottom" id="6U2-ED-nsr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pmQ-Jm-KR8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1Fg-U7-9un">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bluetoothDeviceTableView" destination="1Fg-U7-9un" id="LUX-Wm-3Kn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AT3-MO-baX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2018" y="1286"/>
+        </scene>
+        <!--Peripheral Services View Controller-->
+        <scene sceneID="n2f-3L-tMI">
+            <objects>
+                <viewController storyboardIdentifier="bluetoothservice" id="dDx-Iq-5Ob" customClass="PeripheralServicesViewController" customModule="DotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VEy-qL-hZT"/>
+                        <viewControllerLayoutGuide type="bottom" id="bVC-cm-uef"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y5K-9g-Xny">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jdf-vz-VMD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="servicesViewController" destination="jdf-vz-VMD" id="4Jf-le-rsf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLI-oQ-dNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757" y="1948"/>
+        </scene>
+        <!--Peripheral Characteristics View Controller-->
+        <scene sceneID="a2E-AJ-HB6">
+            <objects>
+                <viewController storyboardIdentifier="bluetoothcharacteristic" id="gu6-mD-RIK" customClass="PeripheralCharacteristicsViewController" customModule="DotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YNz-UW-Cj2"/>
+                        <viewControllerLayoutGuide type="bottom" id="vdh-on-ICO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7kV-u4-0sy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fsQ-83-g7r">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="characteristicsTableView" destination="fsQ-83-g7r" id="P4d-l3-ROb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rds-ml-t4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2248" y="1956"/>
+        </scene>
+        <!--Dot View Controller-->
+        <scene sceneID="Wpg-f5-HRL">
+            <objects>
+                <viewController id="UAi-1B-cR6" customClass="DotViewController" customModule="DotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U7k-8r-YD2"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Vp-rs-2gi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TCb-CG-3LL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vv1-Yf-f7m">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlk-ty-UKT">
+                                        <rect key="frame" x="8" y="4" width="271" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.52184646349999997" blue="0.37715647050000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="alertView" destination="vv1-Yf-f7m" id="wyD-5I-Ftp"/>
+                        <outlet property="messageLabel" destination="hlk-ty-UKT" id="aSY-eV-Drv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hey-x8-gHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2474" y="1286"/>
         </scene>
         <!--Message View Controller-->
         <scene sceneID="dkd-WI-efZ">

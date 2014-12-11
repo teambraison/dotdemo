@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D3175D41A38541E0083C6AF /* DotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3175D31A38541E0083C6AF /* DotViewController.swift */; };
+		5D3175D71A38602D0083C6AF /* PeripheralServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3175D61A38602D0083C6AF /* PeripheralServicesViewController.swift */; };
+		5D3175D91A3860350083C6AF /* PeripheralCharacteristicsIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3175D81A3860350083C6AF /* PeripheralCharacteristicsIViewController.swift */; };
+		5D6AC33C1A384E9E00CAE1CA /* BluetoothDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6AC33B1A384E9E00CAE1CA /* BluetoothDeviceViewController.swift */; };
+		5D6AC3401A384F6500CAE1CA /* BLEScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6AC33F1A384F6500CAE1CA /* BLEScanner.swift */; };
 		5DAA70D31A36FE6200A1AFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA70D21A36FE6200A1AFFA /* AppDelegate.swift */; };
 		5DAA70D51A36FE6200A1AFFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA70D41A36FE6200A1AFFA /* ViewController.swift */; };
 		5DAA70D81A36FE6200A1AFFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAA70D61A36FE6200A1AFFA /* Main.storyboard */; };
@@ -51,6 +56,7 @@
 		5DE955F81A3759C300D5305F /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955F31A3759C300D5305F /* Dollar.swift */; };
 		5DE955F91A3759C300D5305F /* starscream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955F41A3759C300D5305F /* starscream.swift */; };
 		5DE955FA1A3759C300D5305F /* SwifterSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955F51A3759C300D5305F /* SwifterSnippet.swift */; };
+		5DE955FD1A38205E00D5305F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE955FC1A38205E00D5305F /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D3175D31A38541E0083C6AF /* DotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotViewController.swift; sourceTree = "<group>"; };
+		5D3175D61A38602D0083C6AF /* PeripheralServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralServicesViewController.swift; sourceTree = "<group>"; };
+		5D3175D81A3860350083C6AF /* PeripheralCharacteristicsIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralCharacteristicsIViewController.swift; sourceTree = "<group>"; };
+		5D6AC33B1A384E9E00CAE1CA /* BluetoothDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothDeviceViewController.swift; sourceTree = "<group>"; };
+		5D6AC33F1A384F6500CAE1CA /* BLEScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEScanner.swift; sourceTree = "<group>"; };
 		5DAA70CD1A36FE6200A1AFFA /* DotDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAA70D11A36FE6200A1AFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DAA70D21A36FE6200A1AFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +125,7 @@
 		5DE955F31A3759C300D5305F /* Dollar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
 		5DE955F41A3759C300D5305F /* starscream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = starscream.swift; sourceTree = "<group>"; };
 		5DE955F51A3759C300D5305F /* SwifterSnippet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwifterSnippet.swift; sourceTree = "<group>"; };
+		5DE955FC1A38205E00D5305F /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +146,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D3175D21A3854060083C6AF /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				5D3175D31A38541E0083C6AF /* DotViewController.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		5D6AC33A1A384E7100CAE1CA /* Bluetooth Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5D3175D81A3860350083C6AF /* PeripheralCharacteristicsIViewController.swift */,
+				5D3175D61A38602D0083C6AF /* PeripheralServicesViewController.swift */,
+				5D6AC33B1A384E9E00CAE1CA /* BluetoothDeviceViewController.swift */,
+			);
+			name = "Bluetooth Setting";
+			sourceTree = "<group>";
+		};
+		5D6AC33E1A384F5600CAE1CA /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				5D6AC33F1A384F6500CAE1CA /* BLEScanner.swift */,
+			);
+			name = Bluetooth;
+			sourceTree = "<group>";
+		};
 		5DAA70C41A36FE6200A1AFFA = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +233,7 @@
 		5DAA70F31A36FEEA00A1AFFA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5D6AC33E1A384F5600CAE1CA /* Bluetooth */,
 				5DE955E11A37583C00D5305F /* SocketIO */,
 				5DAA71371A37265500A1AFFA /* Message */,
 				5DAA711F1A37055800A1AFFA /* Contact */,
@@ -231,6 +270,9 @@
 		5DAA70FD1A37007E00A1AFFA /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5D3175D21A3854060083C6AF /* Custom */,
+				5D6AC33A1A384E7100CAE1CA /* Bluetooth Setting */,
+				5DE955FB1A38204E00D5305F /* Setting */,
 				5DAA71341A37263500A1AFFA /* Message */,
 				5DAA712E1A3706A400A1AFFA /* Time */,
 				5DAA712B1A3705DA00A1AFFA /* Keyboard */,
@@ -382,6 +424,14 @@
 			path = vendor;
 			sourceTree = "<group>";
 		};
+		5DE955FB1A38204E00D5305F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5DE955FC1A38205E00D5305F /* SettingViewController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -493,11 +543,15 @@
 				5DAA71011A3700E100A1AFFA /* MainMenuViewController.swift in Sources */,
 				5DE955EC1A37586200D5305F /* EngineTransport.swift in Sources */,
 				5DE955F81A3759C300D5305F /* Dollar.swift in Sources */,
+				5D3175D91A3860350083C6AF /* PeripheralCharacteristicsIViewController.swift in Sources */,
 				5DAA71211A37056400A1AFFA /* Contact.swift in Sources */,
 				5DE955EF1A37586200D5305F /* Utils.swift in Sources */,
+				5D3175D71A38602D0083C6AF /* PeripheralServicesViewController.swift in Sources */,
 				5DAA70F81A36FEFF00A1AFFA /* DotAPI.swift in Sources */,
 				5DAA71141A3702F400A1AFFA /* HTTPUpload.swift in Sources */,
+				5D6AC3401A384F6500CAE1CA /* BLEScanner.swift in Sources */,
 				5DE955EA1A37586200D5305F /* EngineParser.swift in Sources */,
+				5D6AC33C1A384E9E00CAE1CA /* BluetoothDeviceViewController.swift in Sources */,
 				5DAA70D51A36FE6200A1AFFA /* ViewController.swift in Sources */,
 				5DAA70F71A36FEFF00A1AFFA /* Data.swift in Sources */,
 				5DE955EB1A37586200D5305F /* EngineSocket.swift in Sources */,
@@ -505,11 +559,13 @@
 				5DAA71051A37011200A1AFFA /* DotTableView.swift in Sources */,
 				5DAA711E1A37053D00A1AFFA /* ContactItem.swift in Sources */,
 				5DE955EE1A37586200D5305F /* SocketIO.swift in Sources */,
+				5D3175D41A38541E0083C6AF /* DotViewController.swift in Sources */,
 				5DAA71301A3706B300A1AFFA /* DotTimeViewController.swift in Sources */,
 				5DAA712D1A37060800A1AFFA /* KeyboardViewController.swift in Sources */,
 				5DAA70D31A36FE6200A1AFFA /* AppDelegate.swift in Sources */,
 				5DAA71121A3702F400A1AFFA /* HTTPResponseSerializer.swift in Sources */,
 				5DAA71081A37012F00A1AFFA /* MenuItem.swift in Sources */,
+				5DE955FD1A38205E00D5305F /* SettingViewController.swift in Sources */,
 				5DAA71361A37264600A1AFFA /* MessageViewController.swift in Sources */,
 				5DAA713B1A37267400A1AFFA /* DotDialogBox.swift in Sources */,
 				5DAA71321A3717CF00A1AFFA /* TestMainMenuViewController.swift in Sources */,

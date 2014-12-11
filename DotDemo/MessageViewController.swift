@@ -17,6 +17,7 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var messageTableView: UITableView!
     @IBOutlet weak var sendLabel: UILabel!
     
+    let bleManager = BLEScanner.sharedInstance()
     
     var contact: Contact
     let dotMessage = DotSendMessage()
@@ -121,13 +122,16 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func clientOnPacket(client: SocketIOClient, packet: SocketIOPacket) {
+        println("Client on packet called")
         if(packet.data != nil) {
             let myData: NSArray = packet.data as NSArray
+            println("Assigned mydata")
             if((myData[0] as NSString) == "new_msg") {
                 let dic:Dictionary<String, String> = myData[1] as Dictionary<String, String>
                 let message = dic["message"]!
                 let username = dic["username"]!
                 println("Receiving message from \(username): \(message)")
+                println("Constructed message")
                 addMessageConversation(username, content: message)
 
             }
@@ -143,6 +147,10 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
             message.senderName = contact.username
         }
         messages.append(message)
+        
+        //automatically send data over to watch
+        bleManager.sendData(content)
+        
         dispatch_async(dispatch_get_main_queue(), {
             self.messageTableView.reloadData()
             if(self.messages.count > 0) {
